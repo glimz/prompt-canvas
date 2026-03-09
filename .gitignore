@@ -1,0 +1,14 @@
+node_modules/
+.env
+.env.*
+!.env.example
+dist/
+coverage/
+output/images/
+output/manifest.json
+output/settings.json
+output/audit-log.jsonl
+web/node_modules/
+web/dist/
+web/.vite/
+IMPLEMENTATION_TODO.md

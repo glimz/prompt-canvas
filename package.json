@@ -1,0 +1,29 @@
+{
+  "name": "prompt-canvas",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm:dev:api\" \"npm:dev:web\"",
+    "dev:api": "tsx src/server.ts",
+    "dev:web": "npm --prefix web run dev",
+    "generate": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run typecheck"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "jose": "^5.9.6",
+    "openai": "^5.12.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^24.0.0",
+    "concurrently": "^9.1.2",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.2"
+  }
+}
